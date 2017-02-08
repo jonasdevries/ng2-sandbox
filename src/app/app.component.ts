@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SandBoxComponent } from './components/sandbox.component';
+import { PositionsComponent } from './components/positions.component';
 
 @Component({
   moduleId: module.id,

@@ -1,19 +1,28 @@
 import { Position } from '../domain/position';
+
 export const POSITIONS: Position[] = [ 
 {
 	"id": 1,
-	"symbol": "ATY",
 	"currency": "CAD",
-	"quantity": 16000,
-	"costPrice": 0.5423645,
-	"broker": "Lynx"
+	"symbol": "ATY",
+	"quantity":16000,
+	"costPrice":0.5423645,
+	"closePrice":0.93,
+	"valueInBase":8677.83,
+	"unRealizedProfitLoseinBase":6202.17,
+	"weight":0.06,
+	"broker":"Lynx"
 },
 {
 	"id": 2,
-	"symbol": "BTO",
 	"currency": "CAD",
-	"quantity": 3767,
-	"costPrice": 1.9989198,
-	"broker": "Lynx"
+	"symbol": "BTO",
+	"quantity":3767,
+	"costPrice":1.9989198,
+	"closePrice":3.88,
+	"valueInBase":14615.96,
+	"unRealizedProfitLoseinBase":7086.03,
+	"weight":0.07,
+	"broker":"Lynx"
 }
 ];

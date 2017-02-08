@@ -1,0 +1,10 @@
+<div *ngIf="!isPositionsFileLoaded" class="form-group">
+  <h4>Load positions</h4>
+  <form>
+    <div class="form-group">
+      <label for="label-input-file">File input</label>
+      <input type="file" (change)="changeListener($event)" #input >   
+      <p class="help-block">Respect the JSON file format</p>         
+  </div>
+  </form>    
+</div>

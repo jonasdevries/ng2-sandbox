@@ -1,0 +1,35 @@
+<div class="container">
+
+  <!--
+  <load-positions></load-positions>
+  -->
+
+<div *ngIf="!isPositionsFileLoaded" class="form-group">
+  <h4>Load positions</h4>
+  <form>
+    <div class="form-group">
+      <label for="label-cost-price">costPrice - {{testCostPrice.query.results.quote.Ask}}</label>
+      <input type="submit" (click)="getCostPrice()" ><br>
+
+      <label for="label-input-file">File input</label>
+      <input type="file" (change)="changeListener($event)" >   
+      <p class="help-block">Respect the JSON file format</p>         
+    </div>
+  </form>      
+</div>
+
+  <h4>Positions</h4>
+  <div class="row">
+    <div class="col-xs-3">Symbol</div>
+    <div class="col-xs-3">P/L (base)</div>
+    <div class="col-xs-3">Value (base)</div>
+    <div class="col-xs-3">Weight</div>
+  </div>
+  <div *ngFor="let position of positions" class="row">
+    <div class="col-xs-3">{{position.symbol}}</div>
+    <div class="col-xs-3">{{position.unRealizedProfitLoseinBase}}</div>
+    <div class="col-xs-3">{{position.valueInBase}}</div>
+    <div class="col-xs-3">{{position.weight}}</div>      
+  </div>
+
+</div>  
