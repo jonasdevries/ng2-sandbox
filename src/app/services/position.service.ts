@@ -2,8 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-import { Position } from '../domain/position';
-
+import { Position } from '../datatypes/position';
 import { POSITIONS } from '../mock/mock-positions';
   
 @Injectable()

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { OnInit } from '@angular/core';
 
 import { PositionService } from '../services/position.service';
-import { Position } from '../domain/position';
+import { Position } from '../datatypes/position';
 
 @Component({    
   moduleId: module.id,

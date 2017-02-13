@@ -1,4 +1,4 @@
-import { Position } from '../domain/position';
+import { Position } from '../datatypes/position';
 
 export const POSITIONS: Position[] = [ 
 {
